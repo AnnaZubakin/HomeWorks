@@ -12,7 +12,8 @@ var firstFloat: Float = 5.16
 var secondFloat: Float = 14.2
 
 var summa: Double = Double(firstFloat) + Double(secondFloat)
-print(summa)
+let formated = String(format: "%.2f", summa)
+print(formated)
 
 /*
  Ex2:
@@ -60,14 +61,13 @@ print("new \(quantityMacbook) MacBook Pro with the price of: \(priceMacbook) EUR
  Fix this Fatal error inside the if-else statements to print whenever this age can be converted to Int or not!
  */
 
-/* WRONG CONVERSION
-var userInputAge = String "33a"
-var convertToInt: Int(userInputAge)
-*/
+/*
+var userInputAge: String = "33a"
+var convertToInt = Int(userInputAge)!
+ */
 
 var userInputAge: String?
 userInputAge = "33a"
-
 var convertToInt = Int(userInputAge ?? "0")
 
 if convertToInt == nil {
