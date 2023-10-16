@@ -24,7 +24,7 @@ let someOrange = Orange()
 
 someOrange.color = "Orange"
 someOrange.taste = "Sweet"
-someOrange.weight = 0.66
+//someOrange.weight = 0.66
 
 print("My \(someOrange.weight) kg orange has \(someOrange.color) color and \(someOrange.taste) taste")
 
